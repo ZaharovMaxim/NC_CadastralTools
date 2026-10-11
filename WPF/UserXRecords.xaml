@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="UserXRecords"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NCSurvey_x64_24"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" Width="400">
+    <Grid x:Name="GridObject"  Height="780"  Width="380" Background="#FF3B4453">
+        <DataGrid x:Name="DGidPropertiesX" HorizontalAlignment="Left" Height="345" VerticalAlignment="Bottom" Width="380" Margin="0,437,0,0" />
+        <TreeView x:Name="TreeViewProp" HorizontalAlignment="Left" Height="400" Margin="0,32,0,0" VerticalAlignment="Top" Width="380"/>
+        <ComboBox x:Name="CBox_listReference" HorizontalAlignment="Left" Height="21" Margin="0,6,0,0" VerticalAlignment="Top" Width="230"/>
+        <Button x:Name="ButtonRefresh" Content="" HorizontalAlignment="Left" Height="25" Margin="235,4,0,0" VerticalAlignment="Top" Width="25">
+            <Button.Background>
+                <ImageBrush ImageSource="/NCSurvey(x64)24;component/WPF/Обновить.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ButtonFindObject" Content="" HorizontalAlignment="Left" Height="25" Margin="265,4,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="1.853,0.507" Foreground="{x:Null}" >
+            <Button.Background>
+                <ImageBrush ImageSource="/NCSurvey(x64)24;component/WPF/Найти.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Unhighlight" Content="" HorizontalAlignment="Left" Height="25" Margin="295,4,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="1.853,0.507" Foreground="{x:Null}" >
+            <Button.Background>
+                <ImageBrush ImageSource="/NCSurvey(x64)24;component/WPF/Найти.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</UserControl>

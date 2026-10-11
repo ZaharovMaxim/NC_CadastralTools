@@ -1,0 +1,27 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vsidx
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.cache
+*.xml
+
+# NuGet
+packages/
+*.nupkg
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Logs / temp
+*.log
+*.tmp

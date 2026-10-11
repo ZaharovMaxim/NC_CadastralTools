@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>NCSurvey_x64_24</RootNamespace>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+
+  <ItemGroup>
+    <Compile Remove="CivilLandProject\ImportData\ImportPointData.vb" />
+    <Compile Remove="CivilLandProject\ImportData\SVPlan1.vb" />
+    <Compile Remove="CivilLandProject\Reports\Forest\ReportTree.vb" />
+    <Compile Remove="CivilLandProject\test\TestF.vb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="WPF\Найти.png" />
+    <None Remove="WPF\Обновить.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="nanoCAD">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>23</VersionMajor>
+      <Guid>00fa1b17-5455-4c60-bb2a-6492a95d7a68</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CadastralTools">
+      <HintPath>K:\Civil3DToolsUtility\NET\CadastralTools.dll</HintPath>
+    </Reference>
+    <Reference Include="hostdbmgd">
+      <HintPath>..\..\Program Files\Nanosoft\nanoCAD x64 23.1\bin\hostdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="hostmgd">
+      <HintPath>..\..\Program Files\Nanosoft\nanoCAD x64 23.1\bin\hostmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite">
+      <HintPath>K:\Civil3DToolsUtility\NET\NetTopologySuite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="WPF\Найти.png" />
+    <Resource Include="WPF\Обновить.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{94e38dff-614b-4cbd-b67c-f211bb35ce8b}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CivilLandProject\Reports\Forest\" />
+    <Folder Include="CivilLandProject\test\" />
+    <Folder Include="Новая папка\" />
+  </ItemGroup>
+
+</Project>

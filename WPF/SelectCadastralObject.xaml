@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="SelectCadastralObject"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NCSurvey_x64_24"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="400" 
+             Background="#FF0EE27C">
+
+    <!-- Viewbox автоматически масштабирует всё, что внутри него -->
+    <Viewbox>
+        <!-- Grid с фиксированными размерами, как в дизайнере -->
+        <Grid Width="400" Height="800" Background="#FFE08181">
+            <ComboBox HorizontalAlignment="Left" Height="32" Margin="10,10,0,0" VerticalAlignment="Top" Width="244"/>
+            <Button Content="Button" HorizontalAlignment="Left" Height="28" Margin="268,14,0,0" VerticalAlignment="Top" Width="102"/>
+            <TreeView HorizontalAlignment="Center" Height="388" Margin="0,54,0,0" VerticalAlignment="Top" Width="360"/>
+            <DataGrid HorizontalAlignment="Center" Height="313" Margin="0,457,0,0" VerticalAlignment="Top" Width="358" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        </Grid>
+    </Viewbox>
+    </UserControl>

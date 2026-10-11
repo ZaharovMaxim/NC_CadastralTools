@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NCSurvey(x64)24": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\захаров\\NCSurvey(x64)24\\bin\\Debug"
+    }
+  }
+}
